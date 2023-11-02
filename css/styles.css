@@ -1,11 +1,206 @@
-
 @font-face {
-    font-family: 'Schibsted Grotesk', sans-serif;
-    src:  url('../fonts/SchibstedGrotesk-Regular.woff') format('woff'),
-    url('../fonts/SchibstedGrotesk-Regular.woff2') format('woff2')
+    font-family: 'Schibsted Grotesk';
+    src: url('../fonts/SchibstedGrotesk-VariableFont_wght.woff') format('woff'),
+        url('../fonts/SchibstedGrotesk-VariableFont_wght.woff2') format('woff2')
 }
 
-body {
+html {
     font-family: 'Schibsted Grotesk', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+
+}
+
+header {
+    text-align: center;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+
+}
+
+p {
+    font-size: 1rem;
+}
+
+h2,
+p,
+label {
+    color: #2D3945;
+}
+
+label {
+    line-height: 2rem;
+}
+
+ p{
+    color: #A8ADB2
+}
+
+#the-code-review {
+    background: #2D3945;
+    padding: 4%;
+}
+
+#hero {
+    margin: 15% 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.hr:first-of-type {
+    border-top: 3px solid #2D3945;
+    margin-bottom: 2px;
+}
+
+.hr{
+    border-top: 1px solid #2D3945;
+    margin-top: auto;
+}
+
+
+
+fieldset {
+    border: 0;
+}
+
+
+#contact-info label {
+    margin-bottom: 10px;
+}
+
+#contact-info input {
+    background: lightgrey;
+    width: 99%;
+    height: 5vh;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+input::placeholder {
+    text-align: right;
+    margin-right: 1em;
+}
+
+#contact-info input:focus {
+    outline-color: #2D3945;
+
+}
+
+.contact-details, 
+.newsletter-details{
+    margin: 0.5em auto;
+}
+
+
+.newsletter-details p {
+    color: #2D3945
+ }
+
+input#zip{
+    width: 50%;
+}
+
+select::placeholder {
+    text-align: left;
+}
+
+select#state {
+    background: lightgrey;
+    width: 90%;
+    height: 4vh;
+    border: 0;
+    border-radius: 5px;
+}
+
+select#state:focus{
+    outline: #2D3945
+}
+
+select::placeholder {
+    color: #A8ADB2;
+}
+
+option:disabled {
+    color: #A8ADB2;
+}
+
+textarea{
+    width: 100%;
+    height: 10vh;
+    background: lightgrey;
+    border: none;
+}
+
+#signup{
+    color: white;
+    background: #4EBBB5;
+    width: 100%;
+    height: 7vh;
+    border: 0;
+    border-radius: 10px;
+
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto ;
+    font-size: 1.3rem;
+
+}
+
+#signup h2{
+    color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+@media (min-width:768px){
+
+    #the-code-review {
+        background: #2D3945;
+        padding: 2%;
+    }
+
+    #hero {
+        margin: 8%;
+    }
+
+    #wrapper {
+        max-width: 70%;
+        margin: auto;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .contact-details label{
+        flex: 0 0 180px;
+    }
+
+    input#zip{
+        width: 25%;
+    }
+
+
 
 }
