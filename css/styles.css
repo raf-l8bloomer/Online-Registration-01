@@ -93,7 +93,10 @@ input::placeholder {
 
 #contact-info input:focus {
     outline-color: #2D3945;
+}
 
+#contact-info input:focus {
+    background: papayawhip;
 }
 
 .contact-details, 
@@ -122,8 +125,16 @@ select#state {
     border-radius: 5px;
 }
 
-select#state:focus{
-    outline: #2D3945
+select#state:focus {
+    outline-color: #2D3945;
+}
+
+textarea#other-topics:focus{
+    outline-color: #2D3945;
+}
+
+textarea#other-topics:focus {
+    background: papayawhip;
 }
 
 select::placeholder {
